@@ -33,7 +33,7 @@ For other flavours, or if the above steps don't work, just follow the below step
 <br>
 
     sudo apt-get install build-essential linux-headers-$(uname -r) git
-    echo "options ath10k_core skip_otp="y" | sudo tee /etc/modprobe.d/ath10k_core.conf
+    echo 'options ath10k_core skip_otp="y"' | sudo tee /etc/modprobe.d/ath10k_core.conf
     wget https://www.kernel.org/pub/linux/kernel/projects/backports/stable/v4.4.2/backports-4.4.2-1.tar.gz
     tar -zxvf backports-4.4.2-1.tar.gz
     cd backport-4.4.2-1
